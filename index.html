@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <body>
-      <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+      <input type="button" value="Say hello" onClick="showAndroidToast('')" />
 
 <script type="text/javascript">
-    function showAndroidToast(toast) {
-        Android.showToast(toast);
+    function showAndroidToast(message) {
+        Android.postMessage(message);
     }
 </script>
 
